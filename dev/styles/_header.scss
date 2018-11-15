@@ -1,0 +1,85 @@
+/* =========================================
+HEADER
+============================================ */
+
+header{
+	// height: calc(100vh - 51px);
+	// margin-top: 51px;
+	height: 100vh;
+	min-height: 500px;
+	background-image: url(../../assets/background-abstract.jpg);
+}
+
+/* ------------  HEADER NAV STYLES  ------------ */
+
+.header__nav{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: transparent;
+	padding: 15px 5% 10px;
+	z-index: 999;
+	left: 0px;
+	-webkit-transition: $transition;
+	transition: $transition;
+	color: white;
+}
+
+.logoText{
+	margin-right: auto;
+	opacity: 0;
+}
+
+.header__menu ul{
+	display: flex;
+	text-transform: uppercase;
+	font-size: 1.7rem;
+	font-family: $paragraph;
+	margin-right: 4%;
+
+	a{
+		padding: 10px;
+		margin: 5px;
+	}
+}
+
+/* ------------  STICKY NAV & ACTIVE STYLES  ------------ */
+
+.header__nav--bg{
+	background-color: #fff;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: black;
+}
+
+.header__nav--bg .logoText{
+	opacity: 1;
+}
+
+.header__menu ul li a.active{
+	  background: #ff6e6f;
+	}
+
+	.header__menu ul li a.active::after{
+
+	}
+
+	.header__menu ul li a.active::before{
+		
+	}
+
+/* ------------  HEADER INNER STYLES  ------------ */
+
+
+
+.header__inner{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	margin: 0 auto 51px;
+	height: 90%;
+	width: 90%;
+}

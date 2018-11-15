@@ -1,0 +1,51 @@
+/* =========================================
+VARIABLES AND MIXINS
+============================================ */
+
+/* ------------  COLORS  ------------ */
+
+$darkshade: #0c1219;
+$cream: #ece6e6;
+$grey: #ebebeb;
+$greyblue: #7ea2b9;
+$medshade: #696fa6;
+$accent: #493698;
+
+/* ------------  Title  ------------ */
+
+$transition: all .3s ease-in-out;
+
+/* ------------  MEDIA QUERIES  ------------ */
+
+// Breakpoints 
+$xs: 480px;
+$sm: 660px;
+$med: 760px;
+$lg: 800px;
+$xl: 960px;
+
+// MIXINS
+
+@mixin mq($break){
+    @if $break == 'sm'{
+		@media(max-width: $sm){
+		@content;
+			}
+  } 
+    @else if $break == 'med'{
+		@media(max-width: $med){
+		@content;
+	}
+    } 
+    @else if $break == 'lg'{
+		@media(max-width: $lg){
+		@content;
+			}
+    }
+    @else if $break == 'xl'{
+		@media(max-width: $xl){
+		@content;
+			}
+		}
+}
+

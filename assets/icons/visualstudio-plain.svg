@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 128 128" style="enable-background:new 0 0 128 128;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+</style>
+<title>visualstudio-plain</title>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="64" y1="125.7" x2="64" y2="2.3">
+	<stop  offset="0" style="stop-color:#7EA2B9"/>
+	<stop  offset="0" style="stop-color:#688DA6"/>
+	<stop  offset="0" style="stop-color:#6990A6"/>
+	<stop  offset="1" style="stop-color:#493698"/>
+</linearGradient>
+<path class="st0" d="M95,2.3l30.5,12.3v98.7l-30.7,12.4L45.8,77l-31,24.1L2.5,94.9V33.1l12.3-5.9l31,24.3L95,2.3z M14.8,45.7v37.5
+	l18.5-19L14.8,45.7z M62.9,64.2l31.9,25.1V39L62.9,64.2z"/>
+</svg>

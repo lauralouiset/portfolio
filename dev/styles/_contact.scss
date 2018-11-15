@@ -1,0 +1,87 @@
+/* =========================================
+CONTACT
+============================================ */
+
+#contact{
+	background: $grey;
+}
+
+.contact-content{
+	display:flex;
+		@media (max-width: 680px){
+		flex-direction: column;
+	}
+}
+
+form{
+	width: 70%;
+	margin: 20px auto;
+	display:flex;
+	flex-wrap: wrap;
+
+	@media (max-width: 680px){
+		width: 90%;
+	}
+}
+
+input{
+	width: 47%;
+}
+
+textarea{
+	width: 100%;
+}
+
+input, textarea{
+	margin: 10px 11px;
+	padding: 10px;
+	border: none;
+	border-bottom: 2px solid $medshade;
+	font-family: $paragraph;
+	color: $darkshade;
+	font-size: 1.4rem;
+}
+
+input:focus{
+	outline: none;
+	border: 2px solid $medshade
+}
+
+button{
+	@extend .button;
+	background: white;
+	margin: 10px auto;
+	padding: 10px 27px;
+}
+
+
+
+.contact-details{
+	padding: 20px;
+	text-align: center;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	width: 50%;
+
+	p{
+		font-size: 1.8rem;
+	}
+
+		@media (max-width: 680px){
+		width: 90%;
+	}
+}
+
+.contact-socials-container{
+	display: inherit;
+}
+
+.contact-socials{
+	display: flex;
+	font-size: 2rem;
+	margin: 0 auto;
+	li{
+		padding: 10px;
+	}
+}

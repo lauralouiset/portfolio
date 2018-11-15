@@ -1,0 +1,64 @@
+/* =========================================
+LAURA-LOUISE TOBIN PORTFOLIO
+lauralouisetobin@gmail.com
+============================================ */
+
+@import 'setup';
+@import 'var-mix';
+@import 'typography';
+@import 'utils';
+
+@import 'header';
+@import 'about';
+@import 'featured';
+@import 'portfolio';
+@import 'skills';
+@import 'contact';
+@import 'footer';
+
+/* =========================================
+BASE STYLES
+============================================ */
+
+html{
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+img{
+	max-width: 100%;
+	display: block;
+}
+
+ul{
+	list-style:none;
+	-webkit-padding-start: 0px;
+	-moz-padding-start: 0px;
+}
+
+body{
+	margin: 0;
+}
+
+a{
+	color:inherit;
+	text-decoration: none;
+	cursor: pointer;
+	transition: $transition;
+	-webkit-transition: $transition;
+	&:visited{
+		color:inherit;
+	}
+}
+a:hover{
+	color: inherit;
+}
+
+.wrapper{
+	width: 90%;
+	margin: 0 auto;
+}
+
+section{
+	padding: 6rem 5%;
+}

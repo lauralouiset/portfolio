@@ -1,0 +1,16 @@
+/* ------------  UTILITIES  ------------ */
+
+.button{
+	text-transform:uppercase;
+	font-family: $paragraph;
+	font-size: 1.6rem;
+	padding: 5px;
+	border: 1px solid #a0b7c9;
+	box-shadow: 5px 5px #a0b7c9;
+	transition: all .3s ease-in-out;
+	&:hover{
+		// background: linear-gradient( to bottom, $accent, $medshade, $greyblue );
+		background: $medshade;
+		color: white;
+	}
+}

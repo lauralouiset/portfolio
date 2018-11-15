@@ -1,0 +1,25 @@
+/* ------------  FOOTER STYLES  ------------ */
+
+footer{
+	position: relative;
+	bottom: 0px;
+	padding: 50px 5%;
+}
+
+.footer__socials,
+.footer__nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer__nav li{
+	margin: 5px;
+	font-size: 1.6rem;
+}
+
+.footer_icon{
+	color: hotpink;
+	width: 30px;
+	margin: 5px 10px;
+}
