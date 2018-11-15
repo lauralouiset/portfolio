@@ -2,50 +2,6 @@
 PORFOLIO
 ============================================ */
 
-.portfolio__project{
-	display: flex;
-	margin: 40px 0px;
-	@media (max-width: 730px){
-		flex-direction: column;
-	}
-}
-
-.project__description{
-	padding: 20px;
-	width: 50%;
-		@media (max-width: 730px){
-		width: 100%;
-	}
-}
-
-.project__image{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 50%;
-	margin: 20px;
-		@media (max-width: 730px){
-		width: 100%;
-		order: 0;
-	}
-}
-
-.portfolio--skills{
-	display: flex;
-	flex-flow: row wrap;
-	li{
-		text-transform:uppercase;
-		font-family: $paragraph;
-		font-size: 1.5rem;
-		padding: 7px;
-		background-color: #a8c5dd;
-		margin: 5px;
-	}
-}
-
-.portfolio--buttons{
-	display:flex;
-	a{
-		margin-right: 10px;
-	}
+#portfolio{
+	background-color: #eef3f8;
 }

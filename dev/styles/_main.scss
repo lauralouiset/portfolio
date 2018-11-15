@@ -1,0 +1,51 @@
+/* =========================================
+MAIN STYLES & UTILITIES
+============================================ */
+
+a{
+	transition: $transition;
+	-webkit-transition: $transition;
+}
+
+
+section{
+	padding: 6rem 5%;
+	display: flex;
+	flex-direction: column;
+}
+
+.section__heading{
+	position: relative;
+	z-index: 10;
+}
+
+.section__heading::after{
+	position: absolute;
+  display: block;
+  width: calc(100% + 6px);
+  height: 1rem;
+  background: #64ffda;
+	content: '';
+	z-index: -1;
+	bottom: 0.5rem;
+	left: -3px;
+}
+
+
+/* ------------  UTILITIES  ------------ */
+
+.button{
+	text-transform:uppercase;
+	font-family: $paragraph;
+	font-size: 1.6rem;
+	padding: 5px;
+	border: 1px solid #a0b7c9;
+	box-shadow: 5px 5px #a0b7c9;
+	transition: all .3s ease-in-out;
+	text-align: center;
+	&:hover{
+		// background: linear-gradient( to bottom, $accent, $medshade, $greyblue );
+		background: $medshade;
+		color: white;
+	}
+}

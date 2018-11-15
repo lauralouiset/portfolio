@@ -20,7 +20,7 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	background: transparent;
-	padding: 15px 5% 10px;
+	padding: 0px 7%;
 	z-index: 999;
 	left: 0px;
 	-webkit-transition: $transition;
@@ -40,10 +40,20 @@ header{
 	font-family: $paragraph;
 	margin-right: 4%;
 
+	li{
+		overflow: hidden;
+		padding: 10px 0px;
+		margin: 0px 5px;
+	}
 	a{
 		padding: 10px;
 		margin: 5px;
+		position: relative;
 	}
+}
+
+.header__menu ul a:hover{
+	color: pink;
 }
 
 /* ------------  STICKY NAV & ACTIVE STYLES  ------------ */
@@ -59,21 +69,33 @@ header{
 	opacity: 1;
 }
 
-.header__menu ul li a.active{
-	  background: #ff6e6f;
-	}
+.header__menu ul:not(.side-nav) a::after,
+.header__menu ul:not(.side-nav) a::before {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #64ffda;
+  content: '';
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 
-	.header__menu ul li a.active::after{
+.header__menu ul:not(.side-nav) a::before {
+  top: 0rem;
+}
 
-	}
+.header__menu ul:not(.side-nav) a::after {
+  bottom: 0rem;
+  left: 100%;
+}
 
-	.header__menu ul li a.active::before{
-		
-	}
+.header__menu ul:not(.side-nav) a.active::after, 
+.header__menu ul:not(.side-nav) a.active::before {
+  left: 0;
+  width: 100%;
+}
 
 /* ------------  HEADER INNER STYLES  ------------ */
-
-
 
 .header__inner{
 	display: flex;

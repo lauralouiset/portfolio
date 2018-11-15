@@ -6,13 +6,6 @@ CONTACT
 	background: $grey;
 }
 
-.contact-content{
-	display:flex;
-		@media (max-width: 680px){
-		flex-direction: column;
-	}
-}
-
 form{
 	width: 70%;
 	margin: 20px auto;

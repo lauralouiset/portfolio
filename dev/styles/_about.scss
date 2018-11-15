@@ -23,6 +23,8 @@ ABOUT
 	background: $grey;
 	box-shadow: 7px 7px #a0b7c9;
 	border: 1px solid #a0b7c9;
+	display: flex;
+	flex-direction: column;
 
 		@media (max-width: 780px){
 		width: 90%;
@@ -31,7 +33,6 @@ ABOUT
 		}
 
 	.button{
-		text-align: center;
     display: block;
     width: 170px;
     margin: 0 auto;

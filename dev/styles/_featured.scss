@@ -1,0 +1,66 @@
+/* =========================================
+FEATURED PROJECTS
+============================================ */
+
+.featured__project{
+	display: flex;
+	margin: 40px 0px;
+	@media (max-width: 730px){
+		flex-direction: column;
+	}
+}
+
+.project__description{
+	padding: 20px;
+	width: 50%;
+		@media (max-width: 730px){
+		width: 100%;
+	}
+}
+
+.project__image{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	margin: 20px;
+		@media (max-width: 730px){
+		width: 100%;
+		order: 0;
+	}
+}
+
+.project--skills{
+	display: flex;
+	flex-flow: row wrap;
+	li{
+		text-transform:uppercase;
+		font-family: $paragraph;
+		font-size: 1.5rem;
+		padding: 7px;
+		background-color: #a8c5dd;
+		margin: 5px;
+	}
+}
+
+.project--buttons{
+	display:flex;
+	a{
+		margin-right: 10px;
+	}
+}
+
+
+// ALTERS ORDER OF IMAGE/DESCRIPTION
+.featured__project:nth-child(odd) .project__image{
+	order: 2;
+}
+
+.featured__project:nth-child(odd) .project__description{
+	text-align: right;
+}
+
+.featured__project:nth-child(odd) .project--skills,
+.featured__project:nth-child(odd) .project--buttons{
+	justify-content: flex-end;
+}
