@@ -4,6 +4,7 @@ ABOUT
 
 #about{
 	background: $cream;
+	padding-left: 10%; 
 }
 
 .about__content{
@@ -17,7 +18,7 @@ ABOUT
 
 
 .about-text{
-	width: 60%;
+	width: 50%;
 	margin: 20px;
 	padding: 20px 40px;
 	background: $grey;
@@ -25,6 +26,9 @@ ABOUT
 	border: 1px solid #a0b7c9;
 	display: flex;
 	flex-direction: column;
+	position: relative;
+	top: 30px;
+	left: 40px;
 
 		@media (max-width: 780px){
 		width: 90%;
@@ -42,6 +46,9 @@ ABOUT
 .about-image-container{
 	width: 30%;
 	margin: 30px;
+	position: relative;
+	top: -60px;
+
 
 	@media (max-width: 780px){
 		width: 90%;

@@ -5,3 +5,15 @@ PORFOLIO
 #portfolio{
 	background-color: #eef3f8;
 }
+
+.portfolio__container{
+	display: flex;
+	justify-content: space-around;
+}
+
+.portfolio__item{
+	width: 25%;
+	height: 150px;
+	background-color: $accent-bright;
+	margin: 20px;
+}

@@ -4,6 +4,7 @@ CONTACT
 
 #contact{
 	background: $grey;
+	margin-bottom: 250px;
 }
 
 form{
@@ -43,11 +44,9 @@ input:focus{
 button{
 	@extend .button;
 	background: white;
-	margin: 10px auto;
+	margin: 30px auto 0px;
 	padding: 10px 27px;
 }
-
-
 
 .contact-details{
 	padding: 20px;

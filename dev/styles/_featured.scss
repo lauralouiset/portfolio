@@ -1,17 +1,21 @@
 /* =========================================
 FEATURED PROJECTS
 ============================================ */
+#projects{
+		background-color: #fff;
+}
 
 .featured__project{
 	display: flex;
 	margin: 40px 0px;
+
 	@media (max-width: 730px){
 		flex-direction: column;
 	}
 }
 
 .project__description{
-	padding: 20px;
+	padding: 0px 20px;
 	width: 50%;
 		@media (max-width: 730px){
 		width: 100%;

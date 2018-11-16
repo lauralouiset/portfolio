@@ -1,6 +1,10 @@
 /* =========================================
 MAIN STYLES & UTILITIES
 ============================================ */
+body{
+	position: relative;
+}
+
 
 a{
 	transition: $transition;
@@ -9,14 +13,14 @@ a{
 
 
 section{
-	padding: 6rem 5%;
+	padding: 6rem 7%;
 	display: flex;
 	flex-direction: column;
 }
 
 .section__heading{
 	position: relative;
-	z-index: 10;
+	z-index: 20;
 }
 
 .section__heading::after{
@@ -24,7 +28,7 @@ section{
   display: block;
   width: calc(100% + 6px);
   height: 1rem;
-  background: #64ffda;
+  background: $accent-bright;
 	content: '';
 	z-index: -1;
 	bottom: 0.5rem;
@@ -38,7 +42,7 @@ section{
 	text-transform:uppercase;
 	font-family: $paragraph;
 	font-size: 1.6rem;
-	padding: 5px;
+	padding: 9px 18px;
 	border: 1px solid #a0b7c9;
 	box-shadow: 5px 5px #a0b7c9;
 	transition: all .3s ease-in-out;

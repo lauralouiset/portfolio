@@ -20,7 +20,7 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	background: transparent;
-	padding: 0px 7%;
+	padding: 0px 5%;
 	z-index: 999;
 	left: 0px;
 	-webkit-transition: $transition;
@@ -38,7 +38,6 @@ header{
 	text-transform: uppercase;
 	font-size: 1.7rem;
 	font-family: $paragraph;
-	margin-right: 4%;
 
 	li{
 		overflow: hidden;
@@ -47,13 +46,42 @@ header{
 	}
 	a{
 		padding: 10px;
-		margin: 5px;
 		position: relative;
 	}
 }
 
 .header__menu ul a:hover{
 	color: pink;
+}
+
+// HAMBURGER MENU
+
+.menu__burger{
+	cursor: pointer;
+}
+
+.menu--bar{
+	width: 30px;
+	height: 2px;
+	background: #111;
+	margin: 6px 0;
+	position: relative;
+	right: 0;
+	-webkit-transition: $transition;
+	transition: $transition;
+}
+
+.mb--top{
+
+}
+
+.mb--middle{
+	position: relative;
+	right: 5px;
+}
+
+.mb--bottom{
+	
 }
 
 /* ------------  STICKY NAV & ACTIVE STYLES  ------------ */
@@ -75,7 +103,7 @@ header{
   display: block;
   width: 0;
   height: 2px;
-  background: #64ffda;
+  background: $accent-bright;
   content: '';
   transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
