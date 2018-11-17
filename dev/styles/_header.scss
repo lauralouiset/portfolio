@@ -31,18 +31,22 @@ header{
 .logoText{
 	margin-right: auto;
 	opacity: 0;
+	-webkit-transition: $transition;
+	transition: $transition;
 }
+
 
 .header__menu ul{
 	display: flex;
 	text-transform: uppercase;
 	font-size: 1.7rem;
 	font-family: $paragraph;
+	-webkit-transition: $transition;
+	transition: $transition;
 
 	li{
 		overflow: hidden;
 		padding: 10px 0px;
-		margin: 0px 5px;
 	}
 	a{
 		padding: 10px;
@@ -57,31 +61,25 @@ header{
 // HAMBURGER MENU
 
 .menu__burger{
+	display: none;
 	cursor: pointer;
+	-webkit-transition: $transition;
+	transition: $transition;
+
+	@include mq(sm){
+		display: block;;
+	}
 }
 
 .menu--bar{
 	width: 30px;
 	height: 2px;
-	background: #111;
+	background: #fff;
 	margin: 6px 0;
 	position: relative;
 	right: 0;
 	-webkit-transition: $transition;
 	transition: $transition;
-}
-
-.mb--top{
-
-}
-
-.mb--middle{
-	position: relative;
-	right: 5px;
-}
-
-.mb--bottom{
-	
 }
 
 /* ------------  STICKY NAV & ACTIVE STYLES  ------------ */
@@ -95,6 +93,10 @@ header{
 
 .header__nav--bg .logoText{
 	opacity: 1;
+}
+
+.header__nav--bg .menu--bar{
+	background: #111;
 }
 
 .header__menu ul:not(.side-nav) a::after,
@@ -133,3 +135,58 @@ header{
 	height: 90%;
 	width: 90%;
 }
+
+
+/* ------------  RESPONSIVE NAV STYLES  ------------ */
+
+@include mq(sm){
+	.header__menu{
+		display: none
+	}
+	.header__nav{
+		height: 80px;
+	}
+
+}
+
+.nav__mobile{
+	color: black;
+	background-color: #fff;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	position: fixed;
+	top: 0;
+	.header__menu{
+		display: block;
+		background: #fff;
+
+		position: absolute;
+		top: 80px;
+		left: 0;
+		width: 100%;
+		justify-content: center;
+	}
+	
+	ul{
+		margin: 0 0 10px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.logoText{
+		opacity: 1;
+	}
+
+	.menu__burger .menu--bar{
+		background: black;
+	}
+
+	.menu__burger .mb--middle{
+		position: relative;
+		right: 5px;
+	}
+
+}
+
+
+

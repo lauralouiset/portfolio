@@ -8,9 +8,8 @@ footer{
 	width: 100%;
 	height: 250px;
 }
-
-.footer__socials,
-.footer__nav{
+.footer__nav,
+.footer__socials{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -25,4 +24,13 @@ footer{
 	color: $accent-bright;
 	width: 30px;
 	margin: 5px 10px;
+}
+
+/* ------------  Responsive  ------------ */
+
+@include mq(xs){
+	
+	.footer__nav{
+		flex-direction: column;
+	}
 }
