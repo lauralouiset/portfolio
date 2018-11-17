@@ -25,7 +25,7 @@
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
-			
+
 			<div class="menu__burger">
 				<div class="menu--bar mb--top"></div>
 				<div class="menu--bar mb--middle"></div>
@@ -55,8 +55,10 @@
 				<div class="about-text">
 					<h3 class="section__heading">About Me</h3>
 					<p>I'm a front-end web developer based in Toronto, Canada. As a recent graduate of the Full-Time Immersive Web Development Bootcamp at Hacker You, I work in React, JavaScript, HTML, and CSS.</p>
+
 					<p>From components to mixins, I write clean, dry, modular code in order to create a responsive and accessible user experience.</p>
 					<a href="#contact" class="button">Contact Me</a>
+
 				</div>
 
 			</div>
@@ -81,7 +83,6 @@
 							<li>Node.js</li>
 							<li>JavaScript</li>
 							<li>API</li>
-							<li>RegEx</li>
 							<li>Heroku</li>
 						</ul>
 				
@@ -116,28 +117,6 @@
 					</div>
 				</div>
 
-				<div class="featured__project">
-				<div class="project__image">
-					<img src="assets/kithub.png" alt="Kithub screenshot">
-				</div>
-				
-					<div class="project__description">
-						<h3>KitHub</h3>
-						<p>Built with the Makeup API, KitHub allows users to search for cosmetic products and save their favourites to a wishlist or their personal makeup kit! Using React for the front end and Firebase for the back end, KitHub also includes sign-in authorization with Google.</p>
-						<ul class="project--skills">
-							<li>React</li>
-							<li>Firebase</li>
-							<li>Responsive</li>
-							<li>Sass</li>
-
-						</ul>
-						<div class="project--buttons">
-							<a href="https://kithub-aa9f5.firebaseapp.com/" class="button" target="_blank">View Live</a>
-							<a href="https://github.com/lauralouiset/kithub" class="button" target="_blank">View on Github</a>
-						</div>
-					</div>
-				</div>
-
 		</section>
 
 <!-- PORTFOLIO SECTION -->
@@ -148,10 +127,17 @@
 
 			<div class="portfolio__item">
 				<h3>Salad Club</h3>
+				<p>Javascript Salad Generator</p>
+			</div>
+
+			<div class="portfolio__item">
+				<h3>Kithub</h3>
+				<p>Search & save makeup products with React and Firebase </p>
 			</div>
 
 			<div class="portfolio__item">
 				<h3>Lisbon</h3>
+				<p>Responsive PSD Conversion</p>
 
 				<div class="portfolio__modal">
 
@@ -160,9 +146,6 @@
 			</div>
 
 
-			<div class="portfolio__item">
-				<h3>Single Div Drawings</h3>
-			</div>
 
 		</div>
 	</section>
@@ -271,11 +254,14 @@
 		<section id="contact">
 			<h3 class="section__heading">Contact Me</h3>
 					<form class="contact-form" method="POST" action="http://www.focuspocus.io/magic/hello@lauraloui.se" enctype="multipart/form-data">
-						<label for="name"></label>
-						<input required type="text" name="name" id="name" placeholder="Your Name*">
 
-						<label for="email"></label>
-						<input required type="email" name="email" id="email" placeholder="Your Email*">
+					<div class="form__inputs">
+							<label for="name"></label>
+							<input required type="text" name="name" id="name" placeholder="Your Name*">
+
+							<label for="email"></label>
+							<input required type="email" name="email" id="email" placeholder="Your Email*">
+					</div>
 
 						<textarea name="message" id="" cols="30" rows="7" placeholder="Your message*" required></textarea>
 						<button type="submit">Submit</button>

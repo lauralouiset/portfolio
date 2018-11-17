@@ -29,8 +29,12 @@ footer{
 /* ------------  Responsive  ------------ */
 
 @include mq(xs){
-	
+
 	.footer__nav{
-		flex-direction: column;
+		flex-wrap: wrap;
+		li{
+			margin: 10px;
+			font-size: 2rem;
+		}
 	}
 }

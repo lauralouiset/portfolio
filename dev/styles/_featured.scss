@@ -8,18 +8,11 @@ FEATURED PROJECTS
 .featured__project{
 	display: flex;
 	margin: 40px 0px;
-
-	@media (max-width: 730px){
-		flex-direction: column;
-	}
 }
 
 .project__description{
 	padding: 0px 20px;
 	width: 50%;
-		@media (max-width: 730px){
-		width: 100%;
-	}
 }
 
 .project__image{
@@ -28,10 +21,7 @@ FEATURED PROJECTS
 	justify-content: center;
 	width: 50%;
 	margin: 20px;
-		@media (max-width: 730px){
-		width: 100%;
-		order: 0;
-	}
+
 }
 
 .project--skills{
@@ -67,4 +57,43 @@ FEATURED PROJECTS
 .featured__project:nth-child(odd) .project--skills,
 .featured__project:nth-child(odd) .project--buttons{
 	justify-content: flex-end;
+}
+
+
+/* ------------  RESPONSIVE  ------------ */
+
+@include mq(lg){
+
+.featured__project{
+	flex-direction: column;
+	text-align: center;
+}
+
+.project__description{
+		width: 100%;
+		text-align: center;
+}
+.project__image{
+		width: 100%;
+}
+
+.project--buttons{
+	justify-content: center;
+}
+
+
+// RESTORES ALTERNATING IMAGES
+
+.featured__project:nth-child(odd) .project__image{
+	order: 0;
+}
+
+.featured__project:nth-child(odd) .project__description{
+	text-align: center;
+}
+
+.featured__project:nth-child(odd) .project--skills,
+.featured__project:nth-child(odd) .project--buttons{
+	justify-content: center;
+}
 }

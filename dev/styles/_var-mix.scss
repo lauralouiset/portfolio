@@ -20,7 +20,8 @@ $transition: all .3s ease-in-out;
 /* ------------  MEDIA QUERIES  ------------ */
 
 // Breakpoints 
-$xs: 480px;
+$xxs: 400px;
+$xs: 530px;
 $sm: 660px;
 $med: 760px;
 $lg: 800px;
@@ -29,25 +30,37 @@ $xl: 960px;
 // MIXINS
 
 @mixin mq($break){
-    @if $break == 'sm'{
+
+	@if $break == 'xxs'{
+		@media(max-width: $xxs){
+		@content;
+		}
+	}
+	@else if $break == 'xs'{
+		@media(max-width: $xs){
+		@content;
+		}
+	}
+
+	@else if $break == 'sm'{
 		@media(max-width: $sm){
 		@content;
-			}
+		}
   } 
-    @else if $break == 'med'{
+  @else if $break == 'med'{
 		@media(max-width: $med){
 		@content;
-	}
-    } 
-    @else if $break == 'lg'{
+		}
+  } 
+  @else if $break == 'lg'{
 		@media(max-width: $lg){
 		@content;
-			}
-    }
-    @else if $break == 'xl'{
+		}
+  }
+  @else if $break == 'xl'{
 		@media(max-width: $xl){
 		@content;
 			}
-		}
+	}
 }
 

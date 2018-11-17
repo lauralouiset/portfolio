@@ -8,18 +8,14 @@ CONTACT
 }
 
 form{
-	width: 70%;
+	width: 80%;
 	margin: 20px auto;
-	display:flex;
-	flex-wrap: wrap;
-
-	@media (max-width: 680px){
-		width: 90%;
-	}
+	position: relative;
+	text-align: center;
 }
 
 input{
-	width: 47%;
+	width: 48.5%;
 }
 
 textarea{
@@ -27,13 +23,22 @@ textarea{
 }
 
 input, textarea{
-	margin: 10px 11px;
+	margin: 10px 0px;
 	padding: 10px;
 	border: none;
 	border-bottom: 2px solid $medshade;
 	font-family: $paragraph;
 	color: $darkshade;
 	font-size: 1.4rem;
+}
+
+label{
+	position: absolute;
+}
+
+.form__inputs{
+	display: flex;
+	justify-content: space-between;
 }
 
 input:focus{
@@ -48,32 +53,25 @@ button{
 	padding: 10px 27px;
 }
 
-.contact-details{
-	padding: 20px;
-	text-align: center;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-	width: 50%;
 
-	p{
-		font-size: 1.8rem;
+/* ------------  RESPONSIVE  ------------ */
+
+@include mq(lg){
+
+	.form__inputs{
+		flex-wrap: wrap;
 	}
+	input{
+		width: 100%;
+	}
+}
 
-		@media (max-width: 680px){
+
+form{
+	@media (max-width: 680px){
 		width: 90%;
 	}
+
 }
 
-.contact-socials-container{
-	display: inherit;
-}
 
-.contact-socials{
-	display: flex;
-	font-size: 2rem;
-	margin: 0 auto;
-	li{
-		padding: 10px;
-	}
-}

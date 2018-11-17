@@ -14,17 +14,14 @@ functionality.stickyNav = () => {
 	});
 } 
 
-functionality.openNav = () => {
+functionality.hamburger = () => {
 	$('.menu__burger').on('click', () => {
 		$('.header__nav').toggleClass('nav__mobile');
-	console.log('click');
 	});
 }
-
-
 
 $(document).ready(function() {
 	functionality.stickyNav();
 	functionality.scrollSpy();
-	functionality.openNav();
+	functionality.hamburger();
 });

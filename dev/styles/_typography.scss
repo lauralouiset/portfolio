@@ -47,9 +47,8 @@ p{
 	line-height: 1.3;
 }
 
-
 .section__heading{
-	margin: 10px auto;
+	margin: 0px auto 30px;
 	color: $darkshade;
 	text-align: center;
 	font-size: 3.5rem;
@@ -62,6 +61,12 @@ p{
 	font-family: $logo;
 	font-weight: 700;
 	font-size: 2.6rem;
+}
+
+.header__menu ul{
+	text-transform: uppercase;
+	font-size: 1.7rem;
+	font-family: $paragraph;
 }
 
 /* ------------  PORTFOLIO  ------------ */
@@ -96,6 +101,14 @@ p{
 	}
 }
 
+
+/* ------------  CONTACT  ------------ */
+
+form{
+	input, textarea{
+		font-size: 1.6rem;
+	}
+}
 
 /* ------------  FOOTER  ------------ */
 

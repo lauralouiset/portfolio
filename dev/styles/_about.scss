@@ -9,32 +9,20 @@ ABOUT
 
 .about__content{
 	display: flex;
+	justify-content: space-between;
 	padding: 40px 0;
-
-	@media (max-width: 780px){
-		flex-direction: column;
-	}
 }
 
 
 .about-text{
-	width: 50%;
-	margin: 20px;
+	width: 60%;
+	margin: 20px 0px 20px 40px;
 	padding: 20px 40px;
 	background: $grey;
 	box-shadow: 7px 7px #a0b7c9;
 	border: 1px solid #a0b7c9;
 	display: flex;
 	flex-direction: column;
-	position: relative;
-	top: 30px;
-	left: 40px;
-
-		@media (max-width: 780px){
-		width: 90%;
-		text-align: center;
-		margin: 20px auto;
-		}
 
 	.button{
     display: block;
@@ -44,20 +32,34 @@ ABOUT
 }
 
 .about-image-container{
-	width: 30%;
-	margin: 30px;
+	width: 35%;
+	min-width: 250px;
 	position: relative;
 	top: -60px;
-
-
-	@media (max-width: 780px){
-		width: 90%;
-		margin: 20px auto;
-	}
 
 	img{
 		box-shadow: 7px 7px #3c4862;
 		border: 1px solid #3c4862;
 		margin: 0 auto;
+	}
+}
+
+
+/* ------------  RESPONSIVE  ------------ */
+
+		@media (max-width: 780px){
+
+	.about-text{
+		width: 90%;
+		text-align: center;
+		margin: 20px auto;
+	}			
+
+		}
+
+@include mq(xxs){
+	.about-image-container{
+		width: 90%;
+		margin: 20px auto;
 	}
 }
