@@ -20,8 +20,23 @@ functionality.hamburger = () => {
 	});
 }
 
+functionality.openModal = () => {
+	$('.portfolio__item').on('click', function(){
+		$(this).children('.portfolio__modal').addClass("modalOpen");
+	});
+}
+
+functionality.closeModal = () => {
+	$('.modal__closeButton').on('click', function(e){
+		e.stopPropagation();
+		$('.portfolio__modal').removeClass("modalOpen");
+	});
+}
+
 $(document).ready(function() {
 	functionality.stickyNav();
 	functionality.scrollSpy();
 	functionality.hamburger();
+	functionality.openModal();
+	functionality.closeModal();
 });

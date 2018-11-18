@@ -7,14 +7,69 @@ PORFOLIO
 }
 
 .portfolio__container{
-	display: flex;
-	justify-content: space-around;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-gap: 20px;
+	position: relative;
 }
 
 .portfolio__item{
-	width: 25vw;
-	// height: 25vw;
+	width: 100%;
+	padding: 15px;
 	height: 150px;
 	background-color: $accent-bright;
 	margin: 20px;
+	background-size: cover;
+	
 }
+
+.portfolio--saladClub{
+	background-image: url('../../assets/saladclub-square.jpg')
+}
+
+.portfolio--kithub{
+	background-image: url('../../assets/kithub-square.jpg')
+}
+
+.portfolio--lisbon{
+	background-image: url('../../assets/lisbon-square.jpg')
+}
+
+
+
+/* ------------  MODAL STYLES  ------------ */
+
+.portfolio__modal{
+	cursor: pointer;
+	width: 50%;
+	position: absolute;
+	left: 20%;
+	background-color: #fff;
+	z-index: 1000;
+	padding: 40px;
+	display: none;
+}
+
+.modalOpen{
+	display: block;
+}
+
+.modal__closeButton{
+	width: 30px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.modal__image{
+	width: 100%;
+}
+
+.modal__skills{
+	@extend .project--skills
+}
+
+
+/* ------------  RESPONSIVE  ------------ */
+
