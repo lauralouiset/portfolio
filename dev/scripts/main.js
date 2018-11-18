@@ -23,15 +23,26 @@ functionality.hamburger = () => {
 functionality.openModal = () => {
 	$('.portfolio__item').on('click', function(){
 		$(this).children('.portfolio__modal').addClass("modalOpen");
+		$('.filter').removeClass('hidden');
 	});
 }
 
 functionality.closeModal = () => {
+
 	$('.modal__closeButton').on('click', function(e){
 		e.stopPropagation();
 		$('.portfolio__modal').removeClass("modalOpen");
+		$(".filter").addClass("hidden");
 	});
 }
+
+$(document).click(function (event) {
+	if (!$(event.target).closest(".portfolio__modal,.portfolio__item").length) {
+		$("body").find(".portfolio__modal").removeClass("modalOpen");
+		$(".filter").addClass("hidden");
+	}
+});
+
 
 $(document).ready(function() {
 	functionality.stickyNav();

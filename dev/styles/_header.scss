@@ -42,7 +42,6 @@ header{
 
 .header__menu ul{
 	display: flex;
-
 	-webkit-transition: $transition;
 	transition: $transition;
 
@@ -51,14 +50,16 @@ header{
 		padding: 10px 0px;
 	}
 	a{
+		margin: 5px;
 		padding: 10px;
 		position: relative;
+		transition: $transition;
+		&:hover{
+			background-color: $accent-bright;
+		}
 	}
 }
 
-.header__menu ul a:hover{
-	color: pink;
-}
 
 // HAMBURGER MENU
 
@@ -90,7 +91,7 @@ header{
 	background-color: #fff;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	color: black;
+	color: #111;
 }
 
 .header__nav--bg .logoText{
