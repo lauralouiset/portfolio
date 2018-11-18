@@ -26,7 +26,7 @@
 				</ul>
 			</nav>
 
-			<div class="menu__burger">
+			<div class="menu__burger"  title="open navigation menu" role="opens responsive navigation">
 				<div class="menu--bar mb--top"></div>
 				<div class="menu--bar mb--middle"></div>
 				<div class="menu--bar mb--bottom"></div>
@@ -37,6 +37,7 @@
 		<div class="header__inner">
 			<h1>Laura-Louise Tobin</h1>
 			<h2>Web Developer</h2>
+			<a href="#about"> <img class="downArrow" src="assets/down-arrow.png" alt="Click this arrow icon to scroll down"></a>
 		</div>
 
 	</header>
@@ -49,16 +50,18 @@
 			<div class="about__content">
 
 				<div class="about-image-container">
-						<img src="assets/lauralouise-headshot.jpg" alt="Laura-Louise Tobin headshot">
+						<img src="assets/lauralouise-headshot2.jpg" alt="Laura-Louise Tobin headshot">
 				</div>
 
 				<div class="about-text">
 					<h3 class="section__heading">About Me</h3>
-					<p>I'm a front-end web developer based in Toronto, Canada. As a recent graduate of the Full-Time Immersive Web Development Bootcamp at Hacker You, I work in React, JavaScript, HTML, and CSS.</p>
+					<p>I'm a full-stack web developer based in Toronto, Canada. As a graduate of the Full-Time Immersive Web Development Bootcamp at Hacker You, I work in JavaScript -- specifically React, Node, and ES6 -- HTML, and CSS. From components to mixins, I write clean, DRY, modular code in order to create compelling and accessible user experiences.</p>
 
-					<p>From components to mixins, I write clean, dry, modular code in order to create a responsive and accessible user experience.</p>
+					<p>I studied Linguistics and English Literature at Concordia University, where I developed a love of elegant logic, creative problem solving, and clear communication. Before I began coding, I founded and produced <a href="http://raconteurs.ca">Raconteurs Storytelling</a>, a live storytelling series, for which I organized over 70 live events, produced two radio specials for CBC, and made a <a href="https://vimeo.com/raconteurs">6-episode TV series for Bell Fibe</a>!</p>
+
+					<p>When I'm not coding, I like to spend some time away from screens. I enjoy hiking and cross-country skiing, and am also an <a href="https://www.goodreads.com/laura_louise">avid reader</a>.</p>
+
 					<a href="#contact" class="button">Contact Me</a>
-
 				</div>
 
 			</div>
@@ -121,8 +124,6 @@
 
 <!-- PORTFOLIO SECTION -->
 
-
-
 	<section id="portfolio">
 		<h3 class="section__heading">Past Work</h3>
 		<div class="portfolio__container">
@@ -130,12 +131,67 @@
 			<div class="portfolio__item portfolio--saladClub">
 				<h3>Salad Club</h3>
 				<p>Javascript Salad Generator</p>
-			</div>
+				<div class="portfolio__modal">
+					<div class="modal__closeButton">
+						<svg aria-hidden="true" data-prefix="fas" data-icon="times" class="times" role="img" xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 352 512">
+							<path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
+						</svg>
+					</div>
+				
+					<div class="modal__image">
+						<img src="assets/saladclub.png" alt="">
+					</div>
+				
+					<h3 class="modal__heading">Salad Club</h3>
+					<p class="modal__subheading">Salad Club generates healthy salad ideas, with computed nutritional information and a dynamic graphic display! Built in JavaScript, jQuery, and Adobe Illustrator, Salad Club nspired by Hacker You's weekly salad potluck.</p>
+					<ul class="modal__skills">
+						<li>Javascript</li>
+						<li>jQuery</li>
+						<li>Illustsrator</li>
+						<li>Sass</li>
+					</ul>
+					<div class="modal__buttons">
+						<a href="https://lauralouiset.github.io/salad-club/" class="button" target="_blank">View Live</a>
+						<a href="https://github.com/lauralouiset/salad-club" class="button" target="_blank">View onGithub</a>
+					</div>
+				
+				</div> <!-- modal end -->
+
+
+			</div> <!-- salad club end -->
 
 			<div class="portfolio__item portfolio--kithub">
 				<h3>Kithub</h3>
 				<p>Search & save makeup products with React and Firebase </p>
-			</div>
+				<div class="portfolio__modal">
+					<div class="modal__closeButton">
+						<svg aria-hidden="true" data-prefix="fas" data-icon="times" class="times" role="img" xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 352 512">
+							<path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
+						</svg>
+					</div>
+				
+					<div class="modal__image">
+						<img src="assets/kithub.png" alt="">
+					</div>
+				
+					<h3 class="modal__heading">KitHub</h3>
+					<p class="modal__subheading">KitHub allows users to search for cosmetic products on the Makeup API and save their favourites to a wishlist or their personal makeup kit! Built with React and Firebase, KitHub also includes sign-in authorization with Google.</p>
+					<ul class="modal__skills">
+						<li>React</li>
+						<li>Firebase</li>
+						<li>REST API</li>
+						<li>Responsive</li>
+					</ul>
+					<div class="modal__buttons">
+						<a href="https://kithub-aa9f5.firebaseapp.com/" class="button" target="_blank">View Live</a>
+						<a href="https://github.com/lauralouiset/kithub" class="button" target="_blank">View onGithub</a>
+					</div>
+				
+				</div> <!-- modal end -->
+			</div> <!-- kithub end -->
+
 
 			<div class="portfolio__item portfolio--lisbon">
 				<h3>Lisbon</h3>
@@ -148,11 +204,13 @@
 							<path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
 						</svg>
 					</div>
+
 					<div class="modal__image">
 						<img src="assets/lisbon.png" alt="">
 					</div>
+
 					<h3 class="modal__heading">Lisbon</h3>
-					<p class="modal__subheading">Responsive, pixel-perfect PSD conversion for an event website.</p>
+					<p class="modal__subheading">Pixel-perfect, fully responsive PSD Conversion for an event website.</p>
 					<ul class="modal__skills"><li>Sass</li>
 					<li>jQuery</li>
 					<li>Responsive</li>
@@ -162,13 +220,14 @@
 					<a href="https://lauraloui.se/lisbon" class="button" target="_blank">View Live</a>
 					<a href="https://github.com/lauralouiset/lisbon" class="button" target="_blank">View onGithub</a>
 				</div>
-				</div>
 
-			</div>
+				</div> <!-- modal end -->
+
+			</div><!-- lisbon end -->
 
 
 
-		</div>
+		</div> <!-- portfolio container end -->
 	</section>
 
 

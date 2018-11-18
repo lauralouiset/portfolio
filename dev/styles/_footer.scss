@@ -16,14 +16,28 @@ footer{
 }
 
 .footer__nav li{
-	margin: 5px;
+	margin: 10px 15px 15px;
 	font-size: 1.7rem;
+	}
+
+
+.footer__socials{
+		a{
+		transition: $transition;
+		position: relative;
+		top: 0;
+		color: #5d8fb9;
+		&:hover{
+			top: -3px;
+			color: $accent-bright;
+		}
+	}
 }
 
 .footer_icon{
-	color: $accent-bright;
 	width: 30px;
 	margin: 5px 10px;
+
 }
 
 $duration: .3s;

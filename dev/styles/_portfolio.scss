@@ -8,19 +8,30 @@ PORFOLIO
 }
 
 .portfolio__container{
+	margin-top: 20px;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr;
-	grid-gap: 20px;
+  grid-gap: 5%;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  grid-auto-rows: 1fr;
 
 }
 
+.portfolio__container::before {
+  content: '';
+  width: 0;
+  padding-bottom: 100%;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+.portfolio__container > *:first-child {
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
 .portfolio__item{
-	width: 100%;
 	padding: 15px;
-	height: 150px;
 	background-color: $accent-bright;
-	margin: 20px;
 	background-size: cover;
 	cursor: pointer;
 }
@@ -53,9 +64,10 @@ PORFOLIO
 /* ------------  MODAL STYLES  ------------ */
 
 .portfolio__modal{
-	width: 50%;
+	width: 40%;
+	min-width: 350px;
 	position: absolute;
-	left: 20%;
+	left: 30%;
 	top: 0;
 	background-color: #fff;
 	z-index: 50;
@@ -80,6 +92,14 @@ PORFOLIO
 
 .modal__skills{
 	@extend .project--skills
+}
+
+.modal__buttons{
+	display: flex;
+	flex-wrap: wrap;
+	a{
+		margin: 20px 20px 0 0;
+	}
 }
 
 
