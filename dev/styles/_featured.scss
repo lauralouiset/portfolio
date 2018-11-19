@@ -12,14 +12,18 @@ FEATURED PROJECTS
 
 .project__description{
 	padding: 0px 20px;
-	width: 50%;
+	flex-basis: 50%;
+	flex-shrink: 2;
+	flex-grow: 1;
 }
 
 .project__image{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 50%;
+	flex-basis: 50%;
+	flex-shrink: 1;
+	flex-grow: 2;
 	margin: 20px;
 
 }
@@ -77,10 +81,10 @@ FEATURED PROJECTS
 		width: 100%;
 }
 
+.project--skills,
 .project--buttons{
 	justify-content: center;
 }
-
 
 // RESTORES ALTERNATING IMAGES
 

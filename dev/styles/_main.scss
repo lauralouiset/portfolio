@@ -52,10 +52,7 @@ section{
 	transition: $transition;
 	position:relative;
 	&:hover{
-		// background: linear-gradient( to bottom, $accent, $medshade, $greyblue );
-		// background: $medshade;
 		top: 2px;
 		box-shadow: 3px 3px #a0b7c9;
-		
 	}
 }
