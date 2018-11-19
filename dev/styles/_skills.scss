@@ -6,45 +6,134 @@ SKILLS
 	background: #fcfafb;
 	position: relative;
 	overflow: hidden;
-	height: 400px;
+	height: 425px;
+	padding-left: 10%;
 
 	h3{
-		margin: 0px auto 30px 5%;
+		margin: 0px auto 15px 5%;
 	}
 }
 
+.skills-wrapper{
+	display: flex;
+	justify-content:space-between;
+}
+
+.skills__desc{
+	width: 30%;
+	p{
+		text-align: center;
+		margin: 1.5rem 0;
+	}
+
+}
 
 
 .laptop{
-	position: absolute;
+	position: relative;
 	transform: rotate(16deg);
-	left: 44%;
-	top: 2rem;
+	// left: 44%;
+	top: -8rem;
 	width: 55%;
 }
 
 .sticker{
 	position: absolute;
-
+	filter: saturate(60%);
+	transition: $transition;
+	&:hover{
+		filter: saturate(100%);
+	}
 }
 
 .sticker--node{
-	width: 10%;
-	top: 5px;
-	left: 5px;
-	transform: rotate(10deg);
+	width: 15%;
+	top: 73%;
+	left: 62%;
+	transform: rotate(3deg);
+		&:hover{
+		transform: rotate(3deg) scale(1.1);
+	}
 }
 
 .sticker--react{
-	width: 10%;
-	top: 5%;
-	left: 5%;
-	transform: rotate(10deg);
+	width: 14%;
+	top: 12%;
+	left: 33%;
+	transform: rotate(-11deg);
+		&:hover{
+		transform: rotate(-11deg) scale(1.05);
+	}
 }
 
 .sticker--sass{
-	width: 14%;
-	top: 13%;
-	left: 76%;
+	width: 15%;
+	top: 16%;
+	left: 66%;
 	transform: rotate(32deg);
+	&:hover{
+		transform: rotate(32deg) scale(1.05);
+	}
+}
+
+.sticker--octocat{
+	width: 16%;
+	top: 65%;
+	left: 9%;
+	transform: rotate(-13deg);
+		&:hover{
+		transform: rotate(-13deg) scale(1.05);
+	}
+}
+
+.sticker--gulp{
+	width: 7%;
+	top: 5%;
+	left: 89%;
+	transform: rotate(17deg);
+		&:hover{
+		transform: rotate(17deg) scale(1.05);
+	}
+}
+
+.sticker--vscode{
+	width: 9%;
+	top: 49%;
+	left: 80%;
+	transform: rotate(-5deg);
+		&:hover{
+		transform: rotate(-5deg) scale(1.05);
+	}
+}
+
+.sticker--heroku{
+	width: 9%;
+	top: 37%;
+	left: 18%;
+	transform: rotate(-18deg);
+		&:hover{
+		transform: rotate(-18deg) scale(1.05);
+	}
+}
+
+.sticker--llc{
+	width: 15%;
+	top: 12%;
+	left: 8%;
+	transform: rotate(2deg);
+		&:hover{
+		transform: rotate(2deg) scale(1.05);
+	}
+
+}
+
+
+.sticker--javascript{
+	width: 9%;
+	top: 68%;
+	left: 41%;
+	transform: rotate(0deg);
+		&:hover{
+		transform: rotate(0deg) scale(1.05);
+	}
 }
