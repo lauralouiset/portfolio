@@ -36,8 +36,8 @@ functionality.closeModal = () => {
 	});
 }
 
-$(document).click(function (event) {
-	if (!$(event.target).closest(".portfolio__modal,.portfolio__item").length) {
+$(document).click(function (e) {
+	if (!$(e.target).closest(".portfolio__modal,.portfolio__item").length) {
 		$("body").find(".portfolio__modal").removeClass("modalOpen");
 		$(".filter").addClass("hidden");
 	}
