@@ -22,7 +22,8 @@ functionality.hamburger = () => {
 
 functionality.openModal = () => {
 	$('.portfolio__item').on('click', function(){
-		$(this).children('.portfolio__modal').addClass("modalOpen");
+		const id = $(this).attr('id');
+		$(`.modal__${id}`).addClass('modalOpen');
 		$('.filter').removeClass('hidden');
 	});
 }

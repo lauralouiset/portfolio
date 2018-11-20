@@ -22,10 +22,6 @@ FEATURED PROJECTS
 	align-items: center;
 	justify-content: center;
 	flex-basis: 50%;
-	flex-shrink: 1;
-	flex-grow: 2;
-	margin: 20px;
-
 }
 
 .project--skills{
@@ -43,6 +39,7 @@ FEATURED PROJECTS
 
 .project--buttons{
 	display:flex;
+	margin-top: 2rem;
 	a{
 		margin-right: 20px;
 	}
@@ -78,7 +75,8 @@ FEATURED PROJECTS
 		text-align: center;
 }
 .project__image{
-		width: 100%;
+		width: 80%;
+		margin: 0 auto 2rem;;
 }
 
 .project--skills,

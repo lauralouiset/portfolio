@@ -17,15 +17,17 @@ SKILLS
 .skills-wrapper{
 	display: flex;
 	justify-content:space-between;
+	align-items: flex-start;
 }
 
 .skills__desc{
 	width: 30%;
-	display: flex;
-	flex-direction: column;
 ul{
 	display: flex;
 	flex-wrap: wrap;
+	border-bottom: 1px dashed black;
+	padding-bottom: 5px;
+	width: 100%;
 	li{
 			margin: 5px;
 			padding: 7px;
@@ -36,11 +38,11 @@ ul{
 
 
 .laptop{
-	border: 1px solid slateblue;
 	position: relative;
 	transform: rotate(16deg);
-	width: 60%;
-	top: -10%;
+	width: 70%;
+	top: -15%;
+	left: 7%;
 }
 
 .sticker{
@@ -147,11 +149,58 @@ ul{
 
 /* ------------  RESPONSIVE  ------------ */
 
-.laptop{
+@media(min-width: 1200px){
+		.skills-wrapper{
+			align-items: flex-start;
+		}
+}
 
-	// @media (min-width: 1150px){
-	// 	width: 70%;
-	// 	top: -15%;
-	// 	left: 7%;
-	// }
+@media (max-width: 980px){
+
+	#skills{
+		padding-left: 7%;
+		h3{
+			margin: 0 auto 15px;
+		}
+	}
+
+	.skills-wrapper{
+			margin: 3rem 0;
+			align-items: center;
+	}
+
+	.skills__desc{
+		width: 60%;
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: 3rem;
+		ul{
+			margin: 5px;
+			justify-content: center;
+		}
+	}
+	.laptop{
+		order: -1;
+		transform: rotate(-12deg);
+		width: 45%;
+		top:0;
+		left: 0;
+	}
+}
+
+@media(max-width: 800px){
+	.skills-wrapper{
+		flex-direction: column;
+	}
+
+.laptop{
+	width: 70%;
+	transform: rotate(0deg);
+}
+.skills__desc{
+	width: 100%;
+	margin-top: 3rem;
+	margin-left: 0;
+}
+
 }

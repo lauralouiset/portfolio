@@ -39,7 +39,6 @@ header{
 	background: #fff;
 }
 
-
 .header__menu ul{
 	display: flex;
 	-webkit-transition: $transition;
@@ -59,7 +58,6 @@ header{
 		}
 	}
 }
-
 
 // HAMBURGER MENU
 
@@ -85,7 +83,7 @@ header{
 	transition: $transition;
 }
 
-/* ------------  STICKY NAV & ACTIVE STYLES  ------------ */
+/* ----------  STICKY NAV & ACTIVE STYLES  ---------- */
 
 .header__nav--bg{
 	background-color: #fff;
@@ -102,8 +100,8 @@ header{
 	background: #111;
 }
 
-.header__menu ul:not(.side-nav) a::after,
-.header__menu ul:not(.side-nav) a::before {
+.header__menu ul a::after,
+.header__menu ul a::before {
   position: absolute;
   display: block;
   width: 0;
@@ -113,17 +111,17 @@ header{
   transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.header__menu ul:not(.side-nav) a::before {
+.header__menu ul a::before {
   top: 0rem;
 }
 
-.header__menu ul:not(.side-nav) a::after {
+.header__menu ul a::after {
   bottom: 0rem;
   left: 100%;
 }
 
-.header__menu ul:not(.side-nav) a.active::after, 
-.header__menu ul:not(.side-nav) a.active::before {
+.header__menu ul a.active::after, 
+.header__menu ul a.active::before {
   left: 0;
   width: 100%;
 }
@@ -131,6 +129,7 @@ header{
 /* ------------  HEADER INNER HERO STYLES  ------------ */
 
 .header__inner{
+	position: relative;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
@@ -140,9 +139,11 @@ header{
 }
 
 .downArrow{
+	position: absolute;
+	left:46%;
+	bottom: 0;
 	min-width: 50px;
-	width: 5%;
-	margin: 0 auto;
+	width: 6%;
 }
 
 

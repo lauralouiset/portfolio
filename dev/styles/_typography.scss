@@ -142,6 +142,7 @@ footer p{
 		font-size: 2.5rem;
 	}
 
+
 	@media (max-width: 470px){
 		font-size: 2rem;
 	}
@@ -150,9 +151,6 @@ footer p{
 
 .portfolio__subheading{
 	@include mq(sm){
-		font-size: 1.5rem;
-	}
-	@media (max-width: 470px){
 		display: none;
 	}
 }

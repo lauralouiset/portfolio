@@ -16,7 +16,6 @@ ABOUT
 
 .about-text{
 	width: 60%;
-	margin: 20px 0px 20px 40px;
 	padding: 20px 40px;
 	background: #fbfbfb;
 	box-shadow: 7px 7px #a0b7c9;
@@ -24,10 +23,19 @@ ABOUT
 	display: flex;
 	flex-direction: column;
 
+	a{
+		color: $accent-bright;
+	}
+
 	.button{
     display: block;
     width: 170px;
-    margin: 0 auto;
+		margin: 20px auto 15px;
+		color: inherit;
+	}
+
+	p{
+		margin: 10px;
 	}
 }
 
@@ -35,7 +43,7 @@ ABOUT
 	width: 35%;
 	min-width: 250px;
 	position: relative;
-	top: -60px;
+	top: -30px;
 
 	img{
 		box-shadow: 7px 7px #3c4862;
@@ -44,22 +52,26 @@ ABOUT
 	}
 }
 
+.about-more{
+	display: none;
+}
+
 
 /* ------------  RESPONSIVE  ------------ */
 
-		@media (max-width: 780px){
+@include mq(sm){
+
+	.about__content{
+		flex-direction: column;
+	}
+	.about-image-container{
+		width: 80%;
+		margin: 10px auto;
+	}
 
 	.about-text{
 		width: 90%;
-		text-align: center;
-		margin: 20px auto;
-	}			
-
-		}
-
-@include mq(xxs){
-	.about-image-container{
-		width: 90%;
-		margin: 20px auto;
+		margin: 0 auto;
 	}
+
 }

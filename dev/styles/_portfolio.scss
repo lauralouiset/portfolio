@@ -163,26 +163,16 @@ PORTFOLIO
 /* ------------  MODAL STYLES  ------------ */
 
 .portfolio__modal{
-	width: 50%;
-	min-width: 350px;
+	width: 47%;
+	max-width: 550px;
 	position: absolute;
 	top: 0;
+	left: 27%;
 	background-color: #fff;
 	z-index: 50;
 	padding: 40px;
 	display: none;
 }
-
-.portfolio__item:first-child .portfolio__modal{
-	left: 100%;
-}
-
-.portfolio__item:nth-child(3) .portfolio__modal{
-	right: 100%;
-}
-
-
-
 
 .modalOpen{
 	display: block;
@@ -207,6 +197,7 @@ PORTFOLIO
 .modal__buttons{
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	a{
 		margin: 20px 20px 0 0;
 	}
@@ -230,8 +221,27 @@ PORTFOLIO
 /* ------------  RESPONSIVE  ------------ */
 
 .portfolio__item{
-
-		@media (max-width: 470px){
+		@include mq(sm){
 		justify-content: flex-start;
 	}
+
+}
+
+.portfolio__modal{
+	@include mq(xl){
+		width: 60%;
+		left: 20%;
+
+	}
+
+	@media(max-width: 700px){
+		width: 70%;
+		left: 15%;
+	}
+
+@media(max-width: 600px){
+	width: 90%;
+	left: 5%;
+}
+
 }
