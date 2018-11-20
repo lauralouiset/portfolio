@@ -54,10 +54,73 @@ ul{
 	}
 }
 
+// stickers in alphabetical order
+
+.sticker--git{
+	width: 10%;
+	top: 70%;
+	left: 40%;
+	transform: rotate(-12deg);
+		&:hover{
+		transform: rotate(-12deg) scale(1.05);
+	}
+}
+
+.sticker--github{
+	width: 16%;
+	top: 49%;
+	left: 17%;
+	transform: rotate(-13deg);
+		&:hover{
+		transform: rotate(-13deg) scale(1.05);
+	}
+}
+
+.sticker--gulp{
+	width: 7%;
+	top: 5%;
+	left: 89%;
+	transform: rotate(17deg);
+		&:hover{
+		transform: rotate(17deg) scale(1.05);
+	}
+}
+.sticker--heroku{
+	width: 9%;
+	top: 27%;
+	left: 12%;
+	transform: rotate(-18deg);
+		&:hover{
+		transform: rotate(-18deg) scale(1.05);
+	}
+}
+
+
+
+.sticker--javascript{
+	width: 9%;
+	top: 78%;
+	left: 8%;
+	transform: rotate(0deg);
+		&:hover{
+		transform: rotate(0deg) scale(1.05);
+	}
+}
+
+.sticker--llc{
+	width: 15%;
+	top: 8%;
+	left: 6%;
+	transform: rotate(2deg);
+		&:hover{
+		transform: rotate(2deg) scale(1.05);
+	}
+}
+
 .sticker--node{
 	width: 15%;
-	top: 73%;
-	left: 69%;
+	top: 61%;
+	left: 61%;
 	transform: rotate(3deg);
 		&:hover{
 		transform: rotate(3deg) scale(1.1);
@@ -66,8 +129,8 @@ ul{
 
 .sticker--react{
 	width: 14%;
-	top: 12%;
-	left: 33%;
+	top: 10%;
+	left: 35%;
 	transform: rotate(-11deg);
 		&:hover{
 		transform: rotate(-11deg) scale(1.05);
@@ -84,67 +147,24 @@ ul{
 	}
 }
 
-.sticker--octocat{
-	width: 16%;
-	top: 65%;
-	left: 9%;
-	transform: rotate(-13deg);
-		&:hover{
-		transform: rotate(-13deg) scale(1.05);
-	}
-}
-
-.sticker--gulp{
-	width: 7%;
-	top: 5%;
-	left: 89%;
-	transform: rotate(17deg);
-		&:hover{
-		transform: rotate(17deg) scale(1.05);
-	}
-}
-
 .sticker--vscode{
 	width: 9%;
-	top: 49%;
+	top: 76%;
 	left: 80%;
-	transform: rotate(-5deg);
-		&:hover{
-		transform: rotate(-5deg) scale(1.05);
-	}
-}
-
-.sticker--heroku{
-	width: 9%;
-	top: 37%;
-	left: 18%;
-	transform: rotate(-18deg);
-		&:hover{
-		transform: rotate(-18deg) scale(1.05);
-	}
-}
-
-.sticker--llc{
-	width: 15%;
-	top: 12%;
-	left: 8%;
-	transform: rotate(2deg);
-		&:hover{
-		transform: rotate(2deg) scale(1.05);
-	}
-
-}
-
-
-.sticker--javascript{
-	width: 9%;
-	top: 73%;
-	left: 41%;
 	transform: rotate(0deg);
 		&:hover{
 		transform: rotate(0deg) scale(1.05);
 	}
 }
+
+
+
+
+
+
+
+
+
 
 
 /* ------------  RESPONSIVE  ------------ */
