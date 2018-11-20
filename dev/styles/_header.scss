@@ -3,9 +3,8 @@ HEADER
 ============================================ */
 
 header{
-	// height: calc(100vh - 51px);
-	// margin-top: 51px;
-	height: 100vh;
+	position: relative;
+	height: calc(100vh - 70px);
 	min-height: 500px;
 	background-image: url(../../assets/background-abstract.jpg);
 }
@@ -131,17 +130,44 @@ header{
 .header__inner{
 	position: relative;
 	display: flex;
-	flex-flow: column nowrap;
 	justify-content: center;
-	margin: 0 auto 51px;
+	align-items: center;
+	margin: 0 auto;
 	height: 90%;
 	width: 90%;
 }
 
+.header__text{
+	width: 50%;
+}
+
+.logo__container{
+	width: 30%;
+}
+
+.cls-1 {
+	fill: none;
+	stroke: #fff;
+	stroke-miterlimit: 10;
+	stroke-width: 3.5px;
+	stroke-dasharray: 420;
+  animation: dash 5s linear;
+}
+
+
+
+@keyframes dash {
+	from{
+			stroke-dashoffset: -420;
+	}
+  to {
+    	stroke-dashoffset: 0;
+  }
+}
+	
 .downArrow{
 	position: absolute;
 	left:46%;
-	bottom: 0;
 	min-width: 50px;
 	width: 6%;
 }
