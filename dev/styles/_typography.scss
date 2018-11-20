@@ -124,3 +124,35 @@ footer p{
 	text-transform: uppercase;
 	font-size: 1.5rem;
 }
+
+/* ------------  RESPONSIVE STYLES  ------------ */
+
+
+.portfolio__heading{
+
+	@media (max-width: 875px){
+		font-size: 3.3rem;
+	}
+
+		@media (max-width: 830px){
+		font-size: 3rem;
+	}
+
+	@media (max-width: 780px){
+		font-size: 2.5rem;
+	}
+
+	@media (max-width: 470px){
+		font-size: 2rem;
+	}
+
+}
+
+.portfolio__subheading{
+	@include mq(sm){
+		font-size: 1.5rem;
+	}
+	@media (max-width: 470px){
+		display: none;
+	}
+}

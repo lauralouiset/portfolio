@@ -140,6 +140,7 @@ header{
 }
 
 .downArrow{
+	min-width: 50px;
 	width: 5%;
 	margin: 0 auto;
 }
@@ -161,13 +162,13 @@ header{
 		transition: $transition;
 		background: #fff;
 		position: absolute;
+		ul{
+			margin: 0 0 10px;
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 
-	ul{
-		margin: 0 0 10px;
-		flex-direction: column;
-		align-items: center;
-	}
 
 .nav__mobile{
 	color: black;

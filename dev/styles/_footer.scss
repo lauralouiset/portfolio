@@ -22,6 +22,10 @@ footer{
 
 
 .footer__socials{
+
+	li{
+		margin: 10px;
+	}
 		a{
 		transition: $transition;
 		position: relative;
@@ -35,9 +39,7 @@ footer{
 }
 
 .footer_icon{
-	width: 30px;
-	margin: 5px 10px;
-
+	width: 35px;
 }
 
 $duration: .3s;
@@ -87,13 +89,33 @@ $easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
 
 /* ------------  Responsive  ------------ */
 
-@include mq(xs){
+@include mq(sm){
+
+	footer{
+		padding: 15px;
+	}
 
 	.footer__nav{
 		flex-wrap: wrap;
 		li{
-			margin: 10px;
-			font-size: 2rem;
+			margin: 10px 15px;
 		}
+	}
+}
+
+@include mq(xs){
+
+	footer{
+		height: 150px;
+	}
+
+	.footer__nav{
+		display: none;
+	}
+
+	.footer__socials{
+		width: 80%;
+		justify-content: space-between;
+		margin: 10px auto;
 	}
 }
