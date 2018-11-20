@@ -69,35 +69,38 @@ p{
 	font-family: $paragraph;
 }
 
-/* ------------  PORTFOLIO  ------------ */
 
-.project__description h3,
-.portfolio__item h3{
+/* ------------  PROJECTS  ------------ */
+
+.project__heading,
+.modal__heading{
 	font-size: 2.4rem;
 	font-family: $paragraph;
+	text-transform: uppercase;
+	color: black;
 }
 
+/* ------------  PORTFOLIO  ------------ */
+
+.portfolio__heading{
+	font-size: 3.5rem;
+	font-family: $paragraph;
+	color: white;
+	font-weight: 700;
+	text-align: center;
+}
+
+.portfolio__subheading{
+	color: white;
+	text-align: center;
+}
 
 /* ------------  SKILLS  ------------ */
 
-.skill__title{
-	text-transform: uppercase;
-	font-size: 1.6rem;
-	text-align: center;
-	@media (max-width: 730px){
-		font-size:1.4rem;
-	}
-}
-
-.skill__desc__title{
-	text-transform: uppercase;
-	font-size: 1.6rem;
-	text-align: left;
-	@media(max-width: 620px){
-		font-size: 1.2rem;
-	}
-		@media(max-width: 582px){
-		font-size: 1rem;
+.skills__desc{
+	ul{
+		font-family: $paragraph;
+		font-size: 1.6rem;
 	}
 }
 

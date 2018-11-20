@@ -1,5 +1,5 @@
 /* =========================================
-PORFOLIO
+PORTFOLIO
 ============================================ */
 
 #portfolio{
@@ -16,6 +16,8 @@ PORFOLIO
 
 }
 
+//Portfolio Grid styles
+
 .portfolio__container::before {
   content: '';
   width: 0;
@@ -29,42 +31,139 @@ PORFOLIO
   grid-column: 1 / 1;
 }
 
+
+/* ------------  PORTFOLIO ITEM STYLES  ------------ */
+
 .portfolio__item{
-	padding: 15px;
-	background-color: $accent-bright;
-	background-size: cover;
+	position: relative;
+	// padding: 15px;
 	cursor: pointer;
+	background-blend-mode: darken;
+	background-size: cover;
+	box-shadow: 2px 2px 14px darkgrey;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .portfolio--saladClub{
-	background-image: url('../../assets/saladclub-square.jpg')
+	background-image: url('../../assets/saladclub-square-bw.jpg');
+//	background-color: rgba(17, 23, 70, 0.5);
+	background-color: rgba(0,0,0,0.5);
+  
 }
 
 .portfolio--kithub{
-	background-image: url('../../assets/kithub-square.jpg')
+	background-image: url('../../assets/kithub-square-bw.jpg');
+//	background-color: rgba(17, 23, 70, 0.5);
+	background-color: rgba(0,0,0,0.7);
 }
 
 .portfolio--lisbon{
-	background-image: url('../../assets/lisbon-square.jpg')
+	background-image: url('../../assets/lisbon-square-bw.jpg');
+//	background-color: rgba(17, 23, 70, 0.5);
+	background-color: rgba(0,0,0,0.6);
 }
 
-.filter{
-	width: 100%;
-	position: absolute;
-	height: 100%;
-	background-color: #111;
-	opacity: 0.6;
-	z-index: 25;
+.portfolio__heading{
+	position: relative;
 }
 
-.hidden{
-	display: none;
+.portfolio__subheading{
+	position: relative;
+	opacity: 0;
+	margin: 20px;
+	transition: $transition;
 }
+
+.portfolio__item:hover .portfolio__subheading{
+		opacity: 1;
+}
+
+.portfolio-overlay{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background:rgba(6, 15, 54, 0.7);
+	opacity:0;
+	overflow:hidden;
+	transition:all .5s;
+}
+
+.portfolio__item:hover 
+.portfolio-overlay{
+	opacity:1;
+}
+
+.portfolio-overlay .v,
+.portfolio-overlay .x{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background:0 0;
+}
+
+.portfolio__item:hover .v:after,
+.portfolio__item:hover .v:before{
+	left:7%;
+	right:7%;
+}
+
+.portfolio__item:hover .x:after,
+.portfolio__item:hover .x:before{
+	top:7%;
+	bottom:7%;
+}
+
+.portfolio-overlay .v:after,
+.portfolio-overlay .v:before{
+	content:'';
+	height:1px;
+	position:absolute;
+	left:50%;
+	right:50%;
+	background:#eee;
+	transition:all .5s;
+}
+
+.portfolio-overlay .v:after{
+	top:7%;
+}
+
+.portfolio-overlay .v:before{
+	bottom:7%;
+}
+
+.portfolio-overlay .x:after,
+.portfolio-overlay .x:before{
+	content:'';
+	width:1px;
+	position:absolute;
+	top:50%;
+	bottom:50%;
+	background:#eee;
+	transition:all .5s;
+}
+
+.portfolio-overlay .x:after{
+	right:7%;
+	}
+
+.portfolio-overlay .x:before{
+	left:7%;
+}
+
+
 
 /* ------------  MODAL STYLES  ------------ */
 
 .portfolio__modal{
-	width: 40%;
+	width: 50%;
 	min-width: 350px;
 	position: absolute;
 	left: 30%;
@@ -87,7 +186,8 @@ PORFOLIO
 }
 
 .modal__image{
-	width: 100%;
+	width: 80%;
+	margin: 2rem auto 1rem;
 }
 
 .modal__skills{
@@ -100,6 +200,20 @@ PORFOLIO
 	a{
 		margin: 20px 20px 0 0;
 	}
+}
+
+// Background filter when modals open
+.filter{
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	background-color: #111;
+	opacity: 0.6;
+	z-index: 25;
+}
+
+.hidden{
+	display: none;
 }
 
 

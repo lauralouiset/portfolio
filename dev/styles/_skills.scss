@@ -6,8 +6,8 @@ SKILLS
 	background: #fcfafb;
 	position: relative;
 	overflow: hidden;
-	height: 425px;
 	padding-left: 10%;
+	padding-bottom: 2rem;
 
 	h3{
 		margin: 0px auto 15px 5%;
@@ -21,20 +21,24 @@ SKILLS
 
 .skills__desc{
 	width: 30%;
-	p{
-		text-align: center;
-		margin: 1.5rem 0;
+ul{
+	display: flex;
+	flex-wrap: wrap;
+	li{
+			margin: 5px;
+			padding: 7px;
+			background-color: #a8c5dd;
+		}
 	}
-
 }
 
 
 .laptop{
+	border: 1px solid slateblue;
 	position: relative;
 	transform: rotate(16deg);
-	// left: 44%;
-	top: -8rem;
-	width: 55%;
+	width: 60%;
+	top: -10%;
 }
 
 .sticker{
@@ -49,7 +53,7 @@ SKILLS
 .sticker--node{
 	width: 15%;
 	top: 73%;
-	left: 62%;
+	left: 69%;
 	transform: rotate(3deg);
 		&:hover{
 		transform: rotate(3deg) scale(1.1);
@@ -130,7 +134,7 @@ SKILLS
 
 .sticker--javascript{
 	width: 9%;
-	top: 68%;
+	top: 73%;
 	left: 41%;
 	transform: rotate(0deg);
 		&:hover{
