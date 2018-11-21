@@ -59,19 +59,33 @@ ABOUT
 
 /* ------------  RESPONSIVE  ------------ */
 
-@include mq(sm){
+@media(max-width: 840px){
+
+	#about{
+		padding-left: 5%;
+	}
 
 	.about__content{
 		flex-direction: column;
-	}
-	.about-image-container{
-		width: 80%;
-		margin: 10px auto;
 	}
 
 	.about-text{
 		width: 90%;
 		margin: 0 auto;
+		text-align: center;
 	}
 
+	.about-image-container{
+		width: 50%;
+		margin: 10px auto;
+	}
+
+}
+
+
+@include mq(xs){
+	.about-image-container{
+		width: 80%;
+
+	}
 }

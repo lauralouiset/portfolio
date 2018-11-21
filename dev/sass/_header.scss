@@ -4,16 +4,16 @@ HEADER
 
 header{
 	position: relative;
-	height: calc(100vh - 70px);
-	min-height: 500px;
-	background-image: url(../../assets/background-abstract.jpg);
+	height: 100vh;
+	min-height: 400px;
+	background-image: url(../assets/background-abstract.jpg);
 }
 
 .downArrow{
 	position: absolute;
-	left:46%;
-	min-width: 50px;
-	width: 6%;
+	left: calc(50% - 25px);
+	width: 50px;
+	bottom: 0;
 }
 
 /* ------------  HEADER NAV STYLES  ------------ */
@@ -135,21 +135,21 @@ header{
 /* ------------  HEADER INNER HERO STYLES  ------------ */
 
 .header__inner{
-	position: relative;
 	display: flex;
 	justify-content: space-around;
-	align-items: center;
-	margin: 0 auto;
+	padding: 9rem 5% 0;
 	height: 90%;
-	width: 90%;
 }
 
 .header__text{
 	width: 45%;
+	align-self: flex-end;
 }
 
 .logo__container{
-	width: 30%;
+	width: 40%;
+	max-width: 350px;
+	align-self: flex-start;
 }
 
 // LOGO SVG
@@ -159,7 +159,7 @@ header{
 	stroke-miterlimit: 10;
 	stroke-width: 3.5px;
 	stroke-dasharray: 420;
-  animation: dash 3s linear;
+	animation: dash 2s linear;
 }
 
 @keyframes dash {
@@ -172,10 +172,22 @@ header{
 }
 
 .logo-circle{
-  fill: #7EA2B9;
+	fill: #7EA2B9;
+	animation: fadeIn 4s linear;
+	opacity: 1;
 }
 	
-
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
 
 
 
@@ -201,37 +213,47 @@ header{
 			align-items: center;
 		}
 	}
+	.nav__mobile{
+		color: black;
+		background-color: #fff;
+		padding-top: 5px;
+		padding-bottom: 5px;
 
+		.header__menu{
+			top: 80px;
+		}
 
-.nav__mobile{
-	color: black;
-	background-color: #fff;
-	padding-top: 5px;
-	padding-bottom: 5px;
+		.menu__burger .menu--bar{
+			background: black;
+		}
 
-	.header__menu{
-		top: 80px;
-	}
-
-	.menu__burger .menu--bar{
-		background: black;
-	}
-
-	.logoText{
-		opacity: 1;
-	}
+		.logoText{
+			opacity: 1;
+		}
 	
-	.menu__burger .mb--middle{
-		position: relative;
-		right: 5px;
+		.menu__burger .mb--middle{
+			position: relative;
+			right: 5px;
+		}
+	
 	}
 
-}
+
+	.header__inner{
+		flex-direction:column;
+		padding: 3rem 5% 0;
+	}
+
+	.logo__container{
+		width: 40%;
+		margin: 0 auto;
+		min-width: 150px;
+	}
+
+	.header__text{
+		width: 100%;
+	}
 
 
 
 }
-
-
-
-

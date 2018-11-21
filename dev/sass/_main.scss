@@ -31,12 +31,17 @@ section{
   background: $accent-bright;
 	content: '';
 	z-index: -1;
-	bottom: 0.5rem;
+	bottom: 0.3rem;
 	left: -3px;
 }
 
 .main{
 	position: relative;
+}
+
+// scroll reveal utility class
+html .sr{
+	visibility: hidden;
 }
 
 /* ------------  UTILITIES  ------------ */
@@ -56,3 +61,5 @@ section{
 		box-shadow: 3px 3px #a0b7c9;
 	}
 }
+
+

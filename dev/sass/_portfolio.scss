@@ -47,18 +47,18 @@ PORTFOLIO
 }
 
 .portfolio--saladClub{
-	background-image: url('../../assets/saladclub-square-bw.jpg');
+	background-image: url('../assets/saladclub-square-bw.jpg');
 	background-color: rgba(0,0,0,0.7);
   
 }
 
 .portfolio--kithub{
-	background-image: url('../../assets/kithub-square-bw.jpg');
+	background-image: url('../assets/kithub-square-bw.jpg');
 	background-color: rgba(0,0,0,0.7);
 }
 
 .portfolio--lisbon{
-	background-image: url('../../assets/lisbon-square-bw.jpg');
+	background-image: url('../assets/lisbon-square-bw.jpg');
 	background-color: rgba(0,0,0,0.7);
 }
 
@@ -87,7 +87,7 @@ PORTFOLIO
 	left:0;
 	right:0;
 	bottom:0;
-	background:rgba(6, 15, 54, 0.7);
+	background:rgba(8, 24, 41, 0.7);
 	opacity:0;
 	overflow:hidden;
 	transition:all .5s;
