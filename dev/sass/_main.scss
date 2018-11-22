@@ -5,7 +5,6 @@ body{
 	position: relative;
 }
 
-
 a{
 	transition: $transition;
 	-webkit-transition: $transition;
@@ -42,6 +41,19 @@ section{
 // scroll reveal utility class
 html .sr{
 	visibility: hidden;
+}
+
+// // uncovers fixed footer
+main{
+	position: relative;
+	margin-bottom: 250px;
+	z-index: 2;
+}
+
+@include mq(xs){
+	main{
+		margin-bottom: 150px;
+	}
 }
 
 /* ------------  UTILITIES  ------------ */

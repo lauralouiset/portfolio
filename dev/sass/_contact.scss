@@ -4,7 +4,6 @@ CONTACT
 
 #contact{
 	background: $grey;
-	margin-bottom: 250px;
 }
 
 form{
@@ -43,7 +42,7 @@ label{
 
 input:focus{
 	outline: none;
-	border: 2px solid $medshade
+	border: 2px solid $medshade;
 }
 
 button{
@@ -71,12 +70,4 @@ form{
 		width: 90%;
 	}
 
-}
-
-
-
-@include mq(xs){
-	#contact{
-		margin-bottom: 150px;
-	}
 }
