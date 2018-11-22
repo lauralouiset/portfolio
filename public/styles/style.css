@@ -351,7 +351,7 @@ footer p {
 MAIN STYLES & UTILITIES
 ============================================ */
 body {
-  position: relative;
+  position: absolute;
 }
 
 a {
@@ -425,7 +425,7 @@ header {
   position: relative;
   height: 100vh;
   min-height: 400px;
-  z-index: 2;
+  z-index: 3;
   background-image: url(../../assets/background-abstract.jpg);
 }
 
@@ -878,11 +878,12 @@ PORTFOLIO
 }
 
 .portfolio--kithub {
+  color: blue;
   background-image: url("../../assets/kithub-square-bw.jpg");
   background-color: rgba(17, 4, 27, 0.7);
 }
 
-f .portfolio--lisbon {
+.portfolio--lisbon {
   background-image: url("../../assets/lisbon-square-bw.jpg");
   background-color: rgba(10, 38, 80, 0.7);
 }
