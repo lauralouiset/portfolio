@@ -671,14 +671,20 @@ ABOUT
   padding: 40px 0;
 }
 
-.about-text {
-  width: 60%;
-  padding: 20px 40px;
+.card {
   background: #fbfbfb;
   box-shadow: 7px 7px #a0b7c9;
   border: 1px solid #a0b7c9;
   display: flex;
   flex-direction: column;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-text {
+  width: 60%;
 }
 .about-text a {
   color: #c7a2f5;
@@ -1434,6 +1440,21 @@ footer {
     justify-content: space-between;
     margin: 10px auto;
   }
+}
+#contactSuccess {
+  background-color: #ece6e6;
+}
+#contactSuccess main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thank_you {
+  text-align: center;
+  padding: 4rem 5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
